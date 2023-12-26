@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions</title>
+  <style>
+    /* Your existing CSS styles go here */
+
+    .faq-page {
+      padding: 120px 0;
+    }
+
+    .faq {
+      position: relative;
+      z-index: 2;
+    }
+
+    .card {
+      margin-bottom: 30px;
+      box-shadow: 0 20px 60px 0 rgba(1, 33, 26, 0.1);
+    }
+
+    .card-header {
+      padding: 0;
+      background-color: transparent;
+      border: 0;
+      border-radius: 6px;
+    }
+
+    .card-header h5 {
+      margin: 0;
+      position: relative;
+    }
+
+    .btn-link {
+      color: #2c2c51;
+      font-size: 18px;
+      font-weight: 500;
+      text-decoration: none;
+      white-space: normal;
+      text-align: left;
+      width: 100%;
+      padding: 20px 40px;
+    }
+
+    .btn-link:before {
+      content: "2";
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      z-index: 9;
+      font-family: eleganticons;
+      transition: all 0.5s;
+      transform: translateY(-50%);
+      font-size: 26px;
+      color: #00c99c;
+    }
+
+    .btn-link.collapsed:before {
+      content: "3";
+      color: #4d446b;
+    }
+
+    .card-body {
+      padding: 40px;
+      background: #fbfbfd;
+    }
+
+    .card-body p {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+    .active .btn-link {
+      color: #00c99c;
+    }
+  </style>
+</head>
+<body>
+
+<section class="faq-page">
+  <div class="container pr">
+    <div class="row" style="display: flex;justify-content: center;">
+      <div class="col-md-8">
+        <div class="faq style-three fadeIn">
+          <div class="card">
+            <div class="card-header">
+              <h5>
+                <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapse-01" aria-expanded="false" aria-controls="collapse-01">How does Mockanator.com ensure the realism of generated data?</button>
+              </h5>
+            </div>
+            <div id="collapse-01" class="collapse" aria-labelledby="heading-1" data-parent="#accordionsing">
+              <div class="card-body">
+                <p>
+                  Our advanced algorithms analyze data relationships to create highly realistic test scenarios.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h5>
+                <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapse-02" aria-expanded="false" aria-controls="collapse-02">Can I customize the generated data according to my specific needs?</button>
+              </h5>
+            </div>
+            <div id="collapse-02" class="collapse" aria-labelledby="heading-2" data-parent="#accordionsing">
+              <div class="card-body">
+                <p>
+                  Absolutely! Customization is at the heart of Mockanator.com, allowing you to tailor data as needed.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h5>
+                <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapse-03" aria-expanded="false" aria-controls="collapse-03">Is Mockanator.com easy to integrate with my current testing tools?</button>
+              </h5>
+            </div>
+            <div id="collapse-03" class="collapse" aria-labelledby="heading-3" data-parent="#accordionsing">
+              <div class="card-body">
+                <p>
+                  Yes, our platform is designed for easy integration with a variety of testing environments.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var faqItems = document.querySelectorAll('.collapse');
+
+    faqItems.forEach(function (item) {
+      item.addEventListener('transitionend', function () {
+        var btnLink = item.previousElementSibling ? item.previousElementSibling.querySelector('.btn-link') : null;
+        if (btnLink && item.classList) {
+          if (item.classList.contains('show')) {
+            btnLink.classList.add('active');
+          } else {
+            btnLink.classList.remove('active');
+          }
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
