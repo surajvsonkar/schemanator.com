@@ -47,7 +47,7 @@
             class="navbar mobile-sidenav attr-border navbar-sticky navbar-default validnavs navbar-fixed white no-background">
 
 
-            <div class="container d-flex justify-content-between align-items-center">
+            <div class="container-header d-flex align-items-center">
 
                 <!-- Start Header Navigation -->
                 <div class="navbar-header">
@@ -62,7 +62,7 @@
                 <!-- End Header Navigation -->
 
                 <!-- Main Nav -->
-                <div class="main-nav-content">
+                <div class="main-nav-content" style="margin-left: 270px;">
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="navbar-menu">
 
@@ -73,19 +73,22 @@
 
                         <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                             <li class="dropdown">
-                                <a href="#home" class="" data-toggle="dropdown">Home</a>
+                                <a href="#about" class="" data-toggle="dropdown" style="font-size: 16px;">About us</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#about" class="" data-toggle="dropdown">About us</a>
+                                <a href="#features" class="" data-toggle="dropdown" style="font-size: 16px;">Services</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#features" class="" data-toggle="dropdown">Services</a>
+                                <a href="#pricing" class="" data-toggle="dropdown" style="font-size: 16px;">Pricing</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#pricing" class="" data-toggle="dropdown">Pricing</a>
+                                <a href="#contact" class="" data-toggle="dropdown" style="font-size: 16px;">Contact</a>
                             </li>
-                            <li class="dropdown">
-                                <a href="#contact" class="" data-toggle="dropdown">Contact</a>
+                            <li>
+                                <button type="submit" style="position: absolute;right: -150px;top: -30px;border-radius: 30px;min-height: 45px;min-width: 110px;font-weight: 600;background: linear-gradient(45deg, #02ebad 0%, #5a57fb 50%);color: var(--white);">Login</button>
+                            </li>
+                            <li class="second-header-btn">
+                                <button type="submit" style="position: absolute;right: -190px;top: -30px;border-radius: 30px;min-height: 45px;min-width: 110px;font-weight: 600;background: linear-gradient(45deg, #02ebad 0%, #5a57fb 50%);color: var(--white);">Sign up</button>
                             </li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -337,7 +340,7 @@
 
     <!-- Start Testimonials 
     ============================================= -->
-    <div class="testimonials-area carousel-shadow default-padding">
+    <!-- <div class="testimonials-area carousel-shadow default-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
@@ -357,7 +360,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="testimonial-carousel owl-carousel owl-theme">
-                            <!-- Single Item -->
+                            
                             <div class="item">
                                 <div class="provider">
                                     <img src="assets/img/100x100.png" alt="Author">
@@ -382,8 +385,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- End Single Item -->
-                            <!-- Single Item -->
                             <div class="item">
                                 <div class="provider">
                                     <img src="assets/img/100x100.png" alt="Author">
@@ -408,8 +409,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- End Single Item -->
-                            <!-- Single Item -->
                             <div class="item">
                                 <div class="provider">
                                     <img src="assets/img/100x100.png" alt="Author">
@@ -434,59 +433,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- End Single Item -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Testimonials Area -->
-
-    <section class="faq-page">
-        <h1>Frequently Asked Questions (FAQs)</h1>
-
-        <div class="faqs-container">
-            <div class="faq1 faq">
-                <h3 class="faq-title">
-                    How easy is it to use Schemanator.com for beginners?
-                </h3>
-                <p class="faq-text">
-                    Our platform is designed for ease of use, ensuring beginners can start building databases right away.
-                </p>
-                <button class="faq-toggle">
-                    <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-
-            <div class="faq">
-                <h3 class="faq-title">
-                    Can I integrate my existing data into Schemanator.com?
-                </h3>
-                <p class="faq-text">
-                    Yes, our platform supports various data import options for seamless integration.
-                </p>
-                <button class="faq-toggle">
-                    <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-
-            <div class="faq">
-                <h3 class="faq-title">
-                    Is my data secure with Schemanator.com?
-                </h3>
-                <p class="faq-text">
-                    Data security is our top priority. We employ robust measures to protect your data at all times.
-                </p>
-                <button class="faq-toggle">
-                    <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-        </div>
-    </section>
 
     <!-- Start Pricing 
     ============================================= -->
@@ -583,8 +536,9 @@
     <!-- End Pricing Area -->
     
     <section id="call-to-action" data-bg-image="/assets/media/background/7.jpg" style="
-    background: url('./assets/media/background/7.jpg');
-    padding: 123px 0;
+    background: var(--bg-gradient);
+    background: var(--bg-gradient);
+    padding: 50px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -603,9 +557,10 @@
                 <!-- /.action-content -->
 
                 <div class="action-button wow gptFadeUp" data-wow-delay="0.5s">
-                    <a href="service.html" class="gp-btn btn-two" style="
-                    background: #6e58fc;
-                    color: #fff;
+                    <a href="service.html" class="gp-btn btn-two" style="font-weight: 600;
+                    background-color: #02ebad;
+                    border-radius: 30px;
+                    color: #002c6c;
                 ">Start Your Free Trial</a>
                 </div>
                 <!-- /.action-button -->
@@ -617,16 +572,14 @@
 
     <!-- Star Subscribe Area
     ============================================= -->
-    <div class="subscribe-area text-center text-light relative">
+    <!-- <div class="subscribe-area text-center text-light relative">
         <div class="half-bg-top-gray"></div>
         <div class="container">
             <div class="subscribe-items">
                 <i class="flaticon-email"></i>
-                <!-- Shape -->
                 <div class="fixed-shape-bottom">
                     <img src="assets/img/shape/14.png" alt="Shape">
                 </div>
-                <!-- End Shape -->
                 <div class="row align-center">
                     <div class="col-lg-8 offset-lg-2">
                         <h2>Stay Connected</h2>
@@ -641,8 +594,52 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Subscribe Area -->
+
+    <section class="faq-page">
+        <h1>Frequently Asked Questions (FAQs)</h1>
+    <div class="faqs-container">
+        <div class="faq faq1">
+            <h3 class="faq-title" onclick="toggleFaq(this)">
+                Is my data secure with Schemanator.com?
+            </h3>
+            <p class="faq-text">
+                Data security is our top priority. We employ robust measures to protect your data at all times.
+            </p>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="faq">
+            <h3 class="faq-title" onclick="toggleFaq(this)">
+                Is my data secure with Schemanator.com?
+            </h3>
+            <p class="faq-text">
+                Data security is our top priority. We employ robust measures to protect your data at all times.
+            </p>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="faq">
+            <h3 class="faq-title" onclick="toggleFaq(this)">
+                Is my data secure with Schemanator.com?
+            </h3>
+            <p class="faq-text">
+                Data security is our top priority. We employ robust measures to protect your data at all times.
+            </p>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- Repeat the structure for other FAQs -->
+
+    </div>
+    </section>
 
     <!-- Start Contact Area 
     ============================================= -->
@@ -652,44 +649,7 @@
                 <div class="shape">
                     <img src="assets/img/illustration/contact.png" alt="illustration">
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 info">
-                        <div class="content">
-                            <ul>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-envelope-open-text"></i>
-                                    </div>
-                                    <div class="info">
-                                        <h5>Our Email</h5>
-                                        <a href="mailto:info@validtheme.com">info@validtheme.com</a> <br> <a
-                                            href="mailto:support@softar.com">support@softar.com</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="info">
-                                        <h5>Address</h5>
-                                        <p>
-                                            22 Baker Street, <br> London, United Kingdom, <br> W1U 3BW
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-headphones-alt"></i>
-                                    </div>
-                                    <div class="info">
-                                        <h5>Phone</h5>
-                                        <a href="tel:+4733378901">+44-20-7328-4499</a> <br> <a
-                                            href="tel:+4733378901">+99-34-8878-9989</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="row" style="justify-content: center;">
                     <div class="col-lg-8 contact-form-box">
                         <div class="form-box">
                             <h2>Let's talk?</h2>
@@ -755,7 +715,7 @@
     ============================================= -->
     <footer class="bg-dark text-light">
         <div class="container">
-            <div class="f-items default-padding">
+            <div class="f-items " style="padding: 40px 0;">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 item">
                         <div class="f-item about">
@@ -769,120 +729,23 @@
                                 <button type="submit"> <i class="arrow_right"></i></button>
                             </form>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 item">
-                        <div class="f-item link">
-                            <h4 class="widget-title">Quick LInk</h4>
-                            <ul>
-                                <li>
-                                    <a href="index.html"><i class="fas fa-angle-right"></i> Home</a>
-                                </li>
-                                <li>
-                                    <a href="about-us.html"><i class="fas fa-angle-right"></i> About us</a>
-                                </li>
-                                <li>
-                                    <a href="about-us.html"><i class="fas fa-angle-right"></i> Compnay History</a>
-                                </li>
-                                <li>
-                                    <a href="services.html"><i class="fas fa-angle-right"></i> Features</a>
-                                </li>
-                                <li>
-                                    <a href="blog-with-sidebar.html"><i class="fas fa-angle-right"></i> Blog Page</a>
-                                </li>
-                                <li>
-                                    <a href="about-us.html"><i class="fas fa-angle-right"></i> Login</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="f-item link">
-                            <h4 class="widget-title">Community</h4>
-                            <ul>
-                                <li>
-                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Career</a>
-                                </li>
-                                <li>
-                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Leadership</a>
-                                </li>
-                                <li>
-                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Strategy</a>
-                                </li>
-                                <li>
-                                    <a href="services.html"><i class="fas fa-angle-right"></i> Services</a>
-                                </li>
-                                <li>
-                                    <a href="about-us.html"><i class="fas fa-angle-right"></i> History</a>
-                                </li>
-                                <li>
-                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Components</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="f-item contact-widget">
-                            <h4 class="widget-title">Contact Info</h4>
-                            <div class="address">
-                                <ul>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="fas fa-home"></i>
-                                        </div>
-                                        <div class="content">
-                                            <strong>Address:</strong>
-                                            5919 Trussville Crossings Pkwy, Birmingham
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="fas fa-envelope"></i>
-                                        </div>
-                                        <div class="content">
-                                            <strong>Email:</strong>
-                                            <a href="mailto:info@validtheme.com">info@validtheme.com</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="fas fa-phone"></i>
-                                        </div>
-                                        <div class="content">
-                                            <strong>Phone:</strong>
-                                            <a href="tel:2151234567">+123 34598768</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Start Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <p>&copy; Copyright 2021. All Rights Reserved by <a
-                                href="https://themeforest.net/user/validthemes/portfolio">validthemes</a></p>
-                    </div>
-                    <div class="col-lg-6 text-end link">
-                        <ul>
-                            <li>
-                                <a href="about-us.html">Terms</a>
-                            </li>
-                            <li>
-                                <a href="about-us.html">Privacy</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">Support</a>
-                            </li>
+                        <ul class="footer-social">
+                            <li style="margin-top: 15px;"><a href="#" style="height: 40px;
+                                width: 40px;
+                                line-height: 38px;
+                                text-align: center;
+                                background: rgba(255, 255, 255, 0.059);
+                                color: #afb4c0;
+                                border-radius: 50%;
+                                display: inline-block;
+                                font-size: 14px;
+                                border: 2px solid transparent;"><i class="fab fa-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Start Footer Bottom -->
         <!-- End Footer Bottom -->
     </footer>
     <!-- End Footer -->
@@ -927,6 +790,22 @@
         close_btn.addEventListener('click', () => {
             social_panel_container.classList.remove('visible')
         });
+
+
+        function toggleFaq(clickedElement) {
+        var faqText = clickedElement.nextElementSibling;
+        var faqToggleIcon = clickedElement.nextElementSibling.nextElementSibling.querySelector('.faq-toggle i');
+
+        if (faqText.style.display === 'none' || faqText.style.display === '') {
+            faqText.style.display = 'block';
+            faqToggleIcon.classList.remove('fa-chevron-down');
+            faqToggleIcon.classList.add('fa-times');
+        } else {
+            faqText.style.display = 'none';
+            faqToggleIcon.classList.remove('fa-times');
+            faqToggleIcon.classList.add('fa-chevron-down');
+        }
+    }
     </script>
 
 </body>

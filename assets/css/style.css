@@ -12550,7 +12550,21 @@ ul.about-list li:first-child {
   .call-to-action .action-button {
 	  margin-top: 30px;
 	  -webkit-box-pack: center;
-		  -ms-flex-pack: center;
-			  justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
   }
+}
+
+/* header custom css */
+@media (min-width: 992px) {
+	.container-header {
+		display: flex;
+		align-items: center;
+		flex-wrap: inherit;
+		margin-left: 80px;
+	}
+
+	.second-header-btn {
+		margin-left: 90px;
+	}
 }
