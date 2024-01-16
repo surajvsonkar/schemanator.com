@@ -2600,21 +2600,7 @@ nav.navbar.validnavs .navbar-collapse.collapse img {
 	height: 60px;
 }
 
-nav.navbar.validnavs .navbar-collapse.collapse button {
-	position: absolute;
-	right: 30px;
-	margin: 0;
-	height: 35px;
-	width: 35px;
-	line-height: 31px;
-	text-align: center;
-	border: 2px solid #dddddd !important;
-	border-radius: 50%;
-	color: #232323;
-	font-size: 16px;
-	top: 40px;
-	padding: 0;
-}
+
 
 nav.navbar.validnavs .navbar-collapse.collapse button i {
 	font-weight: 400;

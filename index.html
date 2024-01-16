@@ -31,6 +31,38 @@
     <link href="assets/css/responsive.css" rel="stylesheet" />
     <!-- ========== End Stylesheet ========== -->
 
+    <style>
+        @media (max-width: 991px) {
+            .spcl-btn{
+                position: absolute;
+                left: -15px;
+                border-radius: 30px;
+                min-height: 45px;
+                min-width: 110px;
+                font-weight: 600;
+                background: linear-gradient(45deg, #02ebad 0%, #5a57fb 50%);
+                color: var(--white);
+            }
+
+            .btn-2 {
+                top: 55px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .spcl-btn{
+                position: absolute;
+                right: -190px;
+                top: -30px;
+                border-radius: 30px;
+                min-height: 45px;
+                min-width: 110px;
+                font-weight: 600;
+                background: linear-gradient(45deg, #02ebad 0%, #5a57fb 50%);
+                color: var(--white);
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -73,7 +105,8 @@
 
                         <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                             <li class="dropdown">
-                                <a href="#features" class="" data-toggle="dropdown" style="font-size: 16px;">Services</a>
+                                <a href="#features" class="" data-toggle="dropdown"
+                                    style="font-size: 16px;">Services</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#pricing" class="" data-toggle="dropdown" style="font-size: 16px;">Pricing</a>
@@ -81,11 +114,11 @@
                             <li class="dropdown">
                                 <a href="#contact" class="" data-toggle="dropdown" style="font-size: 16px;">Contact</a>
                             </li>
-                            <li>
-                                <button type="submit" style="position: absolute;right: -150px;top: -30px;border-radius: 30px;min-height: 45px;min-width: 110px;font-weight: 600;background: linear-gradient(45deg, #02ebad 0%, #5a57fb 50%);color: var(--white);">Login</button>
+                            <li class="">
+                                <button class="spcl-btn btn-1" type="submit">Login</button>
                             </li>
                             <li class="second-header-btn">
-                                <button type="submit" style="position: absolute;right: -190px;top: -30px;border-radius: 30px;min-height: 45px;min-width: 110px;font-weight: 600;background: linear-gradient(45deg, #02ebad 0%, #5a57fb 50%);color: var(--white);">Sign up</button>
+                                <button class="spcl-btn btn-2" type="submit">Sign up</button>
                             </li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -531,7 +564,7 @@
         </div>
     </div>
     <!-- End Pricing Area -->
-    
+
     <section id="call-to-action" data-bg-image="/assets/media/background/7.jpg" style="
     background: var(--bg-gradient);
     background: var(--bg-gradient);
@@ -596,46 +629,46 @@
 
     <section class="faq-page">
         <h1>Frequently Asked Questions (FAQs)</h1>
-    <div class="faqs-container">
-        <div class="faq faq1">
-            <h3 class="faq-title" onclick="toggleFaq(this)">
-                Is my data secure with Schemanator.com?
-            </h3>
-            <p class="faq-text">
-                Data security is our top priority. We employ robust measures to protect your data at all times.
-            </p>
-            <button class="faq-toggle">
-                <i class="fas fa-chevron-down"></i>
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <div class="faq">
-            <h3 class="faq-title" onclick="toggleFaq(this)">
-                Is my data secure with Schemanator.com?
-            </h3>
-            <p class="faq-text">
-                Data security is our top priority. We employ robust measures to protect your data at all times.
-            </p>
-            <button class="faq-toggle">
-                <i class="fas fa-chevron-down"></i>
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <div class="faq">
-            <h3 class="faq-title" onclick="toggleFaq(this)">
-                Is my data secure with Schemanator.com?
-            </h3>
-            <p class="faq-text">
-                Data security is our top priority. We employ robust measures to protect your data at all times.
-            </p>
-            <button class="faq-toggle">
-                <i class="fas fa-chevron-down"></i>
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <!-- Repeat the structure for other FAQs -->
+        <div class="faqs-container">
+            <div class="faq faq1">
+                <h3 class="faq-title" onclick="toggleFaq(this)">
+                    Is my data secure with Schemanator.com?
+                </h3>
+                <p class="faq-text">
+                    Data security is our top priority. We employ robust measures to protect your data at all times.
+                </p>
+                <button class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="faq">
+                <h3 class="faq-title" onclick="toggleFaq(this)">
+                    Is my data secure with Schemanator.com?
+                </h3>
+                <p class="faq-text">
+                    Data security is our top priority. We employ robust measures to protect your data at all times.
+                </p>
+                <button class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="faq">
+                <h3 class="faq-title" onclick="toggleFaq(this)">
+                    Is my data secure with Schemanator.com?
+                </h3>
+                <p class="faq-text">
+                    Data security is our top priority. We employ robust measures to protect your data at all times.
+                </p>
+                <button class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <!-- Repeat the structure for other FAQs -->
 
-    </div>
+        </div>
     </section>
 
     <!-- Start Contact Area 
@@ -710,41 +743,39 @@
 
     <!-- Start Footer 
     ============================================= -->
-    <footer class="bg-dark text-light">
+    <div class="footer">
+
+        <!--begin container -->
         <div class="container">
-            <div class="f-items " style="padding: 40px 0;">
-                <div class="row footer-row">
-                    <div class="col-lg-4 col-md-6 item footer-div">
-                        <div class="f-item about">
-                            <img src="assets/img/logo-light.png" alt="Logo">
-                            <p>
-                                Excellence decisively nay man yet impression for contrasted remarkably. There spoke
-                                happy for you are out. Fertile how old address did showing.
-                            </p>
-                            <form action="#">
-                                <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> <i class="arrow_right"></i></button>
-                            </form>
-                        </div>
-                        <ul class="footer-social">
-                            <li style="margin-top: 15px;"><a href="#" style="height: 40px;
-                                width: 40px;
-                                line-height: 38px;
-                                text-align: center;
-                                background: rgba(255, 255, 255, 0.059);
-                                color: #afb4c0;
-                                border-radius: 50%;
-                                display: inline-block;
-                                font-size: 14px;
-                                border: 2px solid transparent;"><i class="fab fa-twitter"></i></a></li>
-                        </ul>
-                    </div>
+
+            <!--begin row -->
+            <div class="row">
+
+                <!--begin col-md-12 -->
+                <div class="col-md-12 text-center c-footer">
+
+                    <p>Copyright © 2024 Checklister.co. Designed by <a href="https://www.fiverr.com/s/dqydPz"
+                            target="_blank">Suraj Sonkar</a></p>
+
+                    <!--begin footer_social -->
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fab fa-twitter" style="
+                            font-size: 20px;
+                            color: #8d8d8d;
+                        "></i></a></li>
+                    </ul>
+                    <!--end footer_social -->
+
                 </div>
+                <!--end col-md-6 -->
+
             </div>
+            <!--end row -->
+
         </div>
-        <!-- Start Footer Bottom -->
-        <!-- End Footer Bottom -->
-    </footer>
+        <!--end container -->
+
+    </div>
     <!-- End Footer -->
 
     <!-- jQuery Frameworks
@@ -790,19 +821,19 @@
 
 
         function toggleFaq(clickedElement) {
-        var faqText = clickedElement.nextElementSibling;
-        var faqToggleIcon = clickedElement.nextElementSibling.nextElementSibling.querySelector('.faq-toggle i');
+            var faqText = clickedElement.nextElementSibling;
+            var faqToggleIcon = clickedElement.nextElementSibling.nextElementSibling.querySelector('.faq-toggle i');
 
-        if (faqText.style.display === 'none' || faqText.style.display === '') {
-            faqText.style.display = 'block';
-            faqToggleIcon.classList.remove('fa-chevron-down');
-            faqToggleIcon.classList.add('fa-times');
-        } else {
-            faqText.style.display = 'none';
-            faqToggleIcon.classList.remove('fa-times');
-            faqToggleIcon.classList.add('fa-chevron-down');
+            if (faqText.style.display === 'none' || faqText.style.display === '') {
+                faqText.style.display = 'block';
+                faqToggleIcon.classList.remove('fa-chevron-down');
+                faqToggleIcon.classList.add('fa-times');
+            } else {
+                faqText.style.display = 'none';
+                faqToggleIcon.classList.remove('fa-times');
+                faqToggleIcon.classList.add('fa-chevron-down');
+            }
         }
-    }
     </script>
 
 </body>
